@@ -2,8 +2,13 @@
 
 <template>
   <div>
-    Page: 首頁
+    <ProductCard />
+    <!-- <Header /> -->
+    <!-- <h1>首頁</h1> -->
+    <!-- <HomeBanner /> -->
   </div>
 </template>
 
-<style scoped></style>
+<style scoped  lang="scss">
+</style>
+
