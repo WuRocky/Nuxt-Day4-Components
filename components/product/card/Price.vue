@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+    price: String,
+})
+</script>
 
 <template>
-    <p class="card-text">NT$ 10000</p>
+    <p class="card-text">{{price}}</p>
 </template>
 
 <style scoped></style>

@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+    imageUrl: String,
+    altText: String,
+})
+</script>
 
 <template>
-    <img src="/assets/images/image.jpg" class="card-img-top img" alt="">
+    <img :src="imageUrl" :alt="altText" class="card-img-top">
 </template>
 
 <style scoped>

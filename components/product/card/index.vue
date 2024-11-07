@@ -1,23 +1,23 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+    imageUrl: String,
+    altText: String,
+    title: String,
+    price: String,
+    buttonText: String,
+})  
+</script>
 
 <template>
     <div class="card card-border" style="width: 18rem;">
-        <ProductCardImage />
+        <ProductCardImage :imageUrl="imageUrl" :atlText="altText" />
         <div class="card-body text-center">
-            <ProductCardTitle />
-            <ProductCardPrice />
-            <ProductCardButton />
+            <ProductCardTitle :title="title" />
+            <ProductCardPrice :price="price" />
+            <ProductCardButton :buttonText="buttonText" />
         </div>
     </div>
 
-    <!-- <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div> -->
 </template>
 
 <style scoped>
